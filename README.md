@@ -92,6 +92,7 @@ Agent skills can include prompt injections, tool poisoning, hidden malware paylo
 
 
 
+<a name="official-claude-skills"></a>
 <details open>
 <summary><h3 style="display:inline">Official Claude Skills</h3></summary>
 
@@ -115,6 +116,7 @@ Agent skills can include prompt injections, tool poisoning, hidden malware paylo
 
 </details>
 
+<a name="skills-by-vercel-engineering-team"></a>
 <details open>
 <summary><h3 style="display:inline">Skills by Vercel Engineering Team</h3></summary>
 
@@ -129,6 +131,7 @@ Agent skills can include prompt injections, tool poisoning, hidden malware paylo
 
 </details>
 
+<a name="skills-by-cloudflare-team"></a>
 <details open>
 <summary><h3 style="display:inline">Skills by Cloudflare Team</h3></summary>
 
@@ -142,6 +145,7 @@ Agent skills can include prompt injections, tool poisoning, hidden malware paylo
 
 </details>
 
+<a name="skills-by-supabase-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Supabase Team</h3></summary>
 
@@ -149,6 +153,7 @@ Agent skills can include prompt injections, tool poisoning, hidden malware paylo
 
 </details>
 
+<a name="skills-by-google-gemini"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Google Gemini</h3></summary>
 
@@ -156,6 +161,7 @@ Agent skills can include prompt injections, tool poisoning, hidden malware paylo
 
 </details>
 
+<a name="skills-by-google-labs-stitch"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Google Labs (Stitch)</h3></summary>
 
@@ -170,6 +176,7 @@ Agent Skills for the Stitch MCP server, compatible with Claude Code, Gemini CLI,
 
 </details>
 
+<a name="skills-by-hugging-face-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Hugging Face Team</h3></summary>
 
@@ -186,6 +193,7 @@ Official AI agent skills from the Hugging Face team for ML workflows.
 
 </details>
 
+<a name="skills-by-stripe-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Stripe Team</h3></summary>
 
@@ -194,6 +202,7 @@ Official AI agent skills from the Hugging Face team for ML workflows.
 
 </details>
 
+<a name="skills-by-callstack"></a>
 <details>
 <summary><h3 style="display:inline">Skills by CallStack</h3></summary>
 
@@ -203,6 +212,7 @@ Official AI agent skills from the Hugging Face team for ML workflows.
 
 </details>
 
+<a name="security-skills-by-trail-of-bits-team"></a>
 <details>
 <summary><h3 style="display:inline">Security Skills by Trail of Bits Team</h3></summary>
 
@@ -231,6 +241,7 @@ Official AI agent skills from the Hugging Face team for ML workflows.
 
 </details>
 
+<a name="skills-by-expo-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Expo Team</h3></summary>
 
@@ -242,6 +253,7 @@ Official AI agent skills from the Expo team for building, deploying, and debuggi
 
 </details>
 
+<a name="skills-by-sentry-team-for-their-dev-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Sentry team for their dev team.</h3></summary>
 
@@ -255,6 +267,7 @@ Official AI agent skills from the Expo team for building, deploying, and debuggi
 
 </details>
 
+<a name="skills-by-better-auth-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Better Auth Team</h3></summary>
 
@@ -264,6 +277,7 @@ Official AI agent skills from the Expo team for building, deploying, and debuggi
 
 </details>
 
+<a name="skills-by-tinybird-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Tinybird Team</h3></summary>
 
@@ -271,6 +285,7 @@ Official AI agent skills from the Expo team for building, deploying, and debuggi
 
 </details>
 
+<a name="skills-by-microsoft"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Microsoft</h3></summary>
 
@@ -428,6 +443,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-falai-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by fal.ai Team</h3></summary>
 
@@ -440,6 +456,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-hashicorp-team-for-terraform"></a>
 <details>
 <summary><h3 style="display:inline">Skills by HashiCorp Team for Terraform</h3></summary>
 
@@ -449,6 +466,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-sanity-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Sanity Team</h3></summary>
 
@@ -459,6 +477,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-wordpress-development-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by WordPress Development Team</h3></summary>
 
@@ -478,6 +497,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-transloadit-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Transloadit Team</h3></summary>
 
@@ -490,6 +510,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-firecrawl-team"></a>
 <details>
 <summary><h3 style="display:inline">Skills by Firecrawl Team</h3></summary>
 
@@ -498,6 +519,7 @@ Domain-specific knowledge for Azure SDK and Foundry development.
 
 </details>
 
+<a name="skills-by-openai"></a>
 <details>
 <summary><h3 style="display:inline">Skills by OpenAI</h3></summary>
 
@@ -536,16 +558,22 @@ Official curated skills from OpenAI's skills repository.
 
 </details>
 
+<a name="skills-by-neon-team"></a>
 **Skills by Neon** - **[neondatabase/using-neon](https://github.com/neondatabase/agent-skills/tree/main/skills/neon-postgres)** - Best practices for Neon Serverless Postgres
 
+<a name="skill-by-cloudflare-engineer"></a>
 **Skill by Cloudflare Engineer** - **[dmmulroy/cloudflare-skill](https://github.com/dmmulroy/cloudflare-skill/tree/main/skills/cloudflare)** - Cloudflare platform reference for Workers, Pages, storage, AI, and networking
 
+<a name="skill-by-clickhouse"></a>
 **Skill by ClickHouse** - **[ClickHouse/agent-skills](https://github.com/ClickHouse/agent-skills)** - The official Agent Skills for [ClickHouse](https://clickhouse.com/). These skills help LLMs and agents to adopt best practices when working with ClickHouse.
 
+<a name="skills-by-remotion-team"></a>
 **Skills by Remotion** - **[remotion-dev/remotion](https://github.com/remotion-dev/skills/tree/main/skills/remotion)** - Programmatic video creation with React
 
+<a name="skills-by-replicate"></a>
 **Skills by Replicate** - **[replicate/replicate](https://github.com/replicate/skills/tree/main/skills/replicate)** - Discover, compare, and run AI models using Replicate's API
 
+<a name="skills-by-typefully"></a>
 **Skills by Typefully** - **[typefully/typefully](https://github.com/typefully/agent-skills/tree/main/skills/typefully)** - Create, schedule, and publish social media content across X, LinkedIn, Threads, Bluesky, and Mastodon
 
 ### Community Skills
