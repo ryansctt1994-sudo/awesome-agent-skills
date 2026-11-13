@@ -1,0 +1,26 @@
+name: README fragment links
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'scripts/check_toc_anchors.py'
+      - 'tests/test_toc_anchors.py'
+      - '.github/workflows/readme-links.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  local-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check internal README links
+        run: python3 scripts/check_toc_anchors.py
+      - name: Regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
