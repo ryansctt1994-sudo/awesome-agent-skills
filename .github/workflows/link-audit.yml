@@ -5,6 +5,8 @@ on:
     paths:
       - README.md
       - scripts/check_links.py
+      - scripts/check_internal_links.py
+      - tests/test_internal_links.py
       - .github/workflows/link-audit.yml
   workflow_dispatch:
   schedule:
@@ -24,6 +26,10 @@ jobs:
           python-version: '3.12'
       - name: Offline URL syntax audit
         run: python scripts/check_links.py README.md
+      - name: Offline link and anchor regression fixtures
+        run: python -m unittest discover -s tests -p 'test_internal_links.py' -v
+      - name: Scan repository-relative Markdown links and anchors
+        run: python scripts/check_internal_links.py .
       - name: Weekly external HTTP audit
         if: github.event_name == 'schedule'
         run: python scripts/check_links.py README.md --live

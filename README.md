@@ -536,15 +536,27 @@ Official curated skills from OpenAI's skills repository.
 
 </details>
 
+<a id="skills-by-neon-team"></a>
+
 **Skills by Neon** - **[neondatabase/using-neon](https://github.com/neondatabase/agent-skills/tree/main/skills/neon-postgres)** - Best practices for Neon Serverless Postgres
+
+<a id="skill-by-cloudflare-engineer"></a>
 
 **Skill by Cloudflare Engineer** - **[dmmulroy/cloudflare-skill](https://github.com/dmmulroy/cloudflare-skill/tree/main/skills/cloudflare)** - Cloudflare platform reference for Workers, Pages, storage, AI, and networking
 
+<a id="skill-by-clickhouse"></a>
+
 **Skill by ClickHouse** - **[ClickHouse/agent-skills](https://github.com/ClickHouse/agent-skills)** - The official Agent Skills for [ClickHouse](https://clickhouse.com/). These skills help LLMs and agents to adopt best practices when working with ClickHouse.
+
+<a id="skills-by-remotion-team"></a>
 
 **Skills by Remotion** - **[remotion-dev/remotion](https://github.com/remotion-dev/skills/tree/main/skills/remotion)** - Programmatic video creation with React
 
+<a id="skills-by-replicate"></a>
+
 **Skills by Replicate** - **[replicate/replicate](https://github.com/replicate/skills/tree/main/skills/replicate)** - Discover, compare, and run AI models using Replicate's API
+
+<a id="skills-by-typefully"></a>
 
 **Skills by Typefully** - **[typefully/typefully](https://github.com/typefully/agent-skills/tree/main/skills/typefully)** - Create, schedule, and publish social media content across X, LinkedIn, Threads, Bluesky, and Mastodon
 
