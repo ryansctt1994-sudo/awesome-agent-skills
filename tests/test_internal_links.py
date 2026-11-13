@@ -44,6 +44,22 @@ class InternalLinkTests(unittest.TestCase):
         self.write("README.md", '```markdown\n[example](missing.md)\n```\n')
         self.assertEqual(scan(self.root), [])
 
+    def test_shorter_inner_fence_does_not_expose_code_links(self):
+        self.write("README.md", "~~~~markdown\n[example](missing.md)\n~~~\n"
+                   "[still-code](also-missing.md)\n~~~~\n# Real\n[ok](#real)\n")
+        self.assertEqual(scan(self.root), [])
+
+    def test_different_fence_marker_cannot_close_block(self):
+        self.write("README.md", "~~~~markdown\n```\n[example](missing.md)\n"
+                   "# Hidden Heading\n~~~~\n[bad](#hidden-heading)\n")
+        errors = scan(self.root)
+        self.assertEqual(len(errors), 1)
+        self.assertIn("missing anchor", errors[0])
+
+    def test_shorter_backticks_do_not_close_longer_backtick_block(self):
+        self.write("README.md", "````md\n```\n[bad](missing.md)\n````\n")
+        self.assertEqual(scan(self.root), [])
+
     def test_absolute_traversal_is_rejected(self):
         self.write("README.md", '[escape](../outside.md)\n')
         self.assertTrue(any("escapes" in x for x in scan(self.root)))
