@@ -1,0 +1,29 @@
+name: Skills Link Hygiene
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - scripts/check_links.py
+      - .github/workflows/link-audit.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '13 9 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline URL syntax audit
+        run: python scripts/check_links.py README.md
+      - name: Weekly external HTTP audit
+        if: github.event_name == 'schedule'
+        run: python scripts/check_links.py README.md --live
