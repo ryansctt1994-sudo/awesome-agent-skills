@@ -35,8 +35,9 @@ def anchors(text: str) -> set[str]:
         if match:
             marker = match.group(1)
             if fence is None:
-                fence = marker[0]
-            elif fence == marker[0]:
+                fence = (marker[0], len(marker))
+            elif (marker[0] == fence[0] and len(marker) >= fence[1]
+                  and not line[match.end():].strip()):
                 fence = None
             continue
         if fence:
@@ -64,10 +65,11 @@ def scan(root: Path) -> list[str]:
         for number, line in enumerate(contents.splitlines(), 1):
             match = FENCE.match(line)
             if match:
-                marker = match.group(1)[0]
+                marker = match.group(1)
                 if fence is None:
-                    fence = marker
-                elif fence == marker:
+                    fence = (marker[0], len(marker))
+                elif (marker[0] == fence[0] and len(marker) >= fence[1]
+                      and not line[match.end():].strip()):
                     fence = None
                 continue
             if fence:
